@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,204 +9,189 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0ad580fb63.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li>
-                    <a href="#header">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </li>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>UI/IX Designer</p>
-            <h1>Hi, I'm <span> Adarsh Kumar</span><br>from India</h1>
-        </div>
-    </div>
-</div>
-<!--------------------- About --------------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et ipsa tenetur, libero optio nesciunt eveniet dicta assumenda accusamus illum, eaque, officiis velit blanditiis officia. Nihil nam quos recusandae consequatur laudantium nobis doloremque rerum laboriosam repellendus, eos dolor voluptatibus, facilis at officiis aut quaerat culpa vel! At, consequuntur aperiam inventore, officia voluptate sunt distinctio veniam assumenda beatae quasi ratione doloribus necessitatibus alias? Obcaecati repellendus eligendi reiciendis ea aspernatur facere maxime?</p>
-                 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                 </div>
-                 <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI?UX</span><br> Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br> Web App Development</li>
-                        <li><span>App Development</span><br> Building Web Android/iOS apps</li>
-                    </ul>
-                 </div>
-                 <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2022 - current</span><br> UI/UX Design training at Gla University </li>
-                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                        <li><span>2017 - 2019</span><br>UI/UX Design Exective at Coin Digital Ltd.</li>
-                    </ul>
-                 </div>
-                 <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2025</span><br> UI/UX Design training at Gla University </li>
-                        <li><span>2019</span><br>+2 from Prayagraj.</li>
-                        <li><span>2017</span><br>10 from Prayagraj.</li>
-                    </ul>
-                 </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/IX Designer</p>
+                <h1>Hi, I'm <span> Adarsh Kumar</span><br>from India</h1>
             </div>
         </div>
     </div>
-</div>
-<!-- -----------------services------------------ -->
-
-<div class="services" id="services">
-    <div class="container">
-        <h1 class="sub-title">My services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Desigin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis quod cupiditate.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI?UX Desigin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis quod cupiditate.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Desigin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis quod cupiditate.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- -------------portfolio---------------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world.
-                    download it from play store</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <!--------------------- About --------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png" alt="">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The app connects you to the talented people around the world.
-                    download it from play store</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="">
-                <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app connects you to the talented people around the world.
-                    download it from play store</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et ipsa tenetur, libero optio
+                        nesciunt eveniet dicta assumenda accusamus illum, eaque, officiis velit blanditiis officia.
+                        Nihil nam quos recusandae consequatur laudantium nobis doloremque rerum laboriosam repellendus,
+                        eos dolor voluptatibus, facilis at officiis aut quaerat culpa vel! At, consequuntur aperiam
+                        inventore, officia voluptate sunt distinctio veniam assumenda beatae quasi ratione doloribus
+                        necessitatibus alias? Obcaecati repellendus eligendi reiciendis ea aspernatur facere maxime?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br> Building Web Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br> UI/UX Design training at Gla University </li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Exective at Coin Digital Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br> UI/UX Design training at Gla University </li>
+                            <li><span>2019</span><br>+2 from Prayagraj.</li>
+                            <li><span>2017</span><br>10 from Prayagraj.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-</div>
+    <!-- -----------------services------------------ -->
 
-<!-- -------------contact------------ -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>Adarsh.kumar_cs.aiml21@gla.ac.in</p>
-                <p><i class="fa-solid fa-square-phone"></i>9005609660</p>
-                <div class="social-icons">
-                    <a target="_blank" href="https://www.instagram.com/_.mr._.adarsh_/"><i class="fa-brands fa-instagram"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/adarsh.kesharawani"><i class="fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/the-adarsh-kumar/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a target="_blank" href="https://github.com/adarsh8081"><i class="fa-brands fa-github"></i></a>
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desigin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis
+                        quod cupiditate.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI?UX Desigin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis
+                        quod cupiditate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Desigin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis
+                        quod cupiditate.</p>
+                    <a href="#">Learn more</a>
+                </div>
             </div>
-            <div class="contact-right"></div>
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name " required>
-                <input type="text" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">submit</button>
-            </form>
         </div>
     </div>
-    <div class="copyright">
-        <p>copyright © ADARSH <i class="fa-solid fa-heart"></i> </p>
+
+    <!-- -------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
     </div>
-</div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
 
-<script>
+    <!-- -------------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>
+                        
+                        <a style="all:unset" href="mailto:Adarsh.kumar_cs.aiml21@gla.ac.in">
+                        Adarsh.kumar_cs.aiml21@gla.ac.in
+                    </a></p>
+                    <p><i class="fa-solid fa-square-phone"></i>
 
-    var sidemeu = document.getElementById("sidemenu");
+                        <a style="all:unset" href="tel:9005609660">9005609660</a>
+                    </p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/_.mr._.adarsh_/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/adarsh.kesharawani"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/the-adarsh-kumar/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/adarsh8081"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © ADARSH <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
 
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
+    <!-- -----------------script----------------- -->
+    <script src="script.js"></script>
 
 
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOP_wnLKTF49Pn_PeNIC8JG68nVN1JOLzHKu31rnfYamcF8yyDXXZ4-FeIT-6SIrCM0A/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
 </body>
+
 </html>

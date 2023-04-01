@@ -363,11 +363,12 @@ form .btn2{
 }
 
 /* ------------css for small screens----------- */
-nav .fa-solid{
-    display: none;
-}
 
 @media only screen and (max-width: 600px){
+    nav .fa-solid{
+        display: none;
+    }
+
     #header{
         background-image: url(images/phone-size.png);
     }

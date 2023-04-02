@@ -39,7 +39,7 @@ form.addEventListener('submit', e => {
 
             setTimeout(function () {
                 window.location.reload();
-            }, 5000);
+            }, 3000);
         })
         .catch(error => console.error('Error!', error.message))
 })

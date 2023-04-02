@@ -32,11 +32,15 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML = "Message sent successful!";
-            setTimeout(function (){
+            setTimeout(function () {
                 msg.innerHTML = ""
-            }, 2000);
-    form.reset
+            }, 5000);
+            form.reset
+
+            setTimeout(function () {
+                window.location.reload();
+            }, 5000);
+        })
+        .catch(error => console.error('Error!', error.message))
 })
-    .catch(error => console.error('Error!', error.message))
-})
-window.reload
+

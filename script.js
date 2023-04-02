@@ -12,25 +12,30 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab")
 }
 
-var sidemeu = document.getElementById("sidemenu");
+var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
-    sidemeu.style.right = "0";
+    sidemenu.style.right = "0";
 }
 
 function closemenu() {
-    sidemeu.style.right = "-200px";
+    sidemenu.style.right = "-200px";
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzOP_wnLKTF49Pn_PeNIC8JG68nVN1JOLzHKu31rnfYamcF8yyDXXZ4-FeIT-6SIrCM0A/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwSV_URERJHDWnDUl6RJlt1Y9jfXBb74gBbVVp05v84VDNPn7LHhKrOGe8QfFH7FNpbRQ/exec'
 const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    confirm("Are you sure you want to submit?");
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    window.location.reload();
+        .then(response => {
+            msg.innerHTML = "Message sent successful!";
+            setTimeout(function (){
+                msg.innerHTML = ""
+            }, 2000);
+    form.reset
+})
+    .catch(error => console.error('Error!', error.message))
 })

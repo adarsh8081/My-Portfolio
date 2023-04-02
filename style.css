@@ -104,7 +104,7 @@ nav ul li a:hover::after{
 
 .sub-title{
     font-size: 60px;
-    font-weight: ;
+    font-weight: 500;
 }
 
 .tab-titles {
@@ -362,13 +362,19 @@ form .btn2{
     color: #ff004f;
 }
 
+#msg{
+    color: #61b752;
+    display: block; 
+    font-size: 20px;
+}
+
 /* ------------css for small screens----------- */
-
+nav .fa-solid{
+    display: none;
+}
+ 
 @media only screen and (max-width: 600px){
-    nav .fa-solid{
-        display: none;
-    }
-
+    
     #header{
         background-image: url(images/phone-size.png);
     }
@@ -384,10 +390,10 @@ form .btn2{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #262626;
         position: fixed;
         top: 0;
-        right: -200;
+        right: -166;
         width: 20vh;
         height: 100vh;
         padding-top: 50px;
@@ -431,5 +437,11 @@ form .btn2{
     .copyright{
         font-size: 14px;
 
+    }
+
+    #msg{
+        color: #61b752;
+        margin: -40px;
+        display: block; 
     }
 }

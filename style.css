@@ -326,7 +326,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababaa;
+    color: #4d0d91;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -353,7 +353,7 @@ form input,form textarea {
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #ffffff;
     border-radius: 6px;
 }
 
@@ -476,11 +476,12 @@ nav .fa-solid {
         font-size: 20px;
     }
     
-    .disable-html *:not(a) {
+    
+    .disable-html *:not(a, i) {
         pointer-events: none;
     }
 
-    .disable-html .sidemenu, a, li {
+    .disable-html .sidemenu, a, li, i {
         pointer-events: auto;
     }
 }

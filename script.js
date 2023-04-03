@@ -15,11 +15,15 @@ function opentab(tabname) {
 var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
-    sidemenu.style.right = "0";
+    sidemenu.style.right = "0";    
+    // document.body.classList.add("disable-html");
+
+
 }
 
 function closemenu() {
     sidemenu.style.right = "-200px";
+    // document.body.classList.remove("disable-html");
 }
 
 

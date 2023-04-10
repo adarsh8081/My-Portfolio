@@ -199,7 +199,7 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration-line: none;
-    color: #fff;
+    color: #D8D8D8;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;

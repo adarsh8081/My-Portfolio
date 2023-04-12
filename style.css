@@ -38,6 +38,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: rgb(69, 69, 69);
+    z-index: 1;
 }
 
 .logo {
@@ -216,6 +217,10 @@ nav ul li a:hover::after {
     padding: 50px;
 }
 
+.work{
+    z-index: 0;
+}
+
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -383,7 +388,7 @@ form .btn2 {
     font-size: 20px;
 }
 
-/* ------------css for small screens----------- */
+/* -------------------------------------css for small screens----------------------------------- */
 nav .fa-solid {
     display: none;
 }
@@ -395,12 +400,17 @@ nav .fa-solid {
     }
 
     .header-text {
-        margin-top: 100%;
         font-size: 16px;
+        margin-bottom: 100%;
+    }
+    .header-text p {
+        font-size: 20px;
+        margin-top: 150%;
     }
 
     .header-text h1 {
         font-size: 30px;
+        /* margin-top: 150%; */
     }
 
     nav .fa-solid {
@@ -483,5 +493,6 @@ nav .fa-solid {
 
     .disable-html .sidemenu, a, li, i {
         pointer-events: auto;
+        z-index: 1;
     }
 }
